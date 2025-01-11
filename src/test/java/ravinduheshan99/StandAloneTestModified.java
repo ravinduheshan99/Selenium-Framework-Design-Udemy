@@ -10,10 +10,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import ravinduheshan99.pageobjects.LandingPage;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.JavascriptExecutor;
 
-public class StandAloneTest {
+public class StandAloneTestModified {
 
     public static void main(String[] args) {
         
@@ -29,13 +31,12 @@ public class StandAloneTest {
         // Maximize browser window for better visibility
         driver.manage().window().maximize();
         
+         
+        LandingPage landingPage = new LandingPage(driver);
         // Open the application URL
-        driver.get("https://rahulshettyacademy.com/client");
-        
+        landingPage.goTo();
         // Enter login credentials and log in
-        driver.findElement(By.id("userEmail")).sendKeys("test@gmail.com");
-        driver.findElement(By.id("userPassword")).sendKeys("test@123");
-        driver.findElement(By.id("login")).click();
+        landingPage.loginApplication("test@gmail.com","test@123");
         
         // Explicit wait to ensure product cards are visible
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
