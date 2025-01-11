@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import ravinduheshan99.pageobjects.LandingPage;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -31,6 +33,8 @@ public class StandAloneTest {
         
         // Open the application URL
         driver.get("https://rahulshettyacademy.com/client");
+        
+        LandingPage landingPage = new LandingPage(driver);
         
         // Enter login credentials and log in
         driver.findElement(By.id("userEmail")).sendKeys("test@gmail.com");
