@@ -1,61 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-12T18:32:25 IST" name="Suite" finished-at="2025-01-12T18:33:31 IST" duration-ms="66548">
+  <suite started-at="2025-01-12T18:50:03 IST" name="Suite" finished-at="2025-01-12T18:50:27 IST" duration-ms="24319">
     <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidations.LoginErrorValidation()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@4d0d9fe7]" name="LoginErrorValidation" class="ravinduheshan99.tests.ErrorValidations"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2025-01-12T18:32:25 IST" name="StandAloneTestModified" finished-at="2025-01-12T18:33:12 IST" duration-ms="46738">
-      <class name="ravinduheshan99.tests.StandAloneTestModified">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ravinduheshan99.tests.StandAloneTestModified@7d0b7e3c]" started-at="2025-01-12T18:32:25 IST" name="launchApplication" finished-at="2025-01-12T18:32:56 IST" duration-ms="30827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="placeOrder()[pri:0, instance:ravinduheshan99.tests.StandAloneTestModified@7d0b7e3c]" started-at="2025-01-12T18:32:56 IST" name="placeOrder" finished-at="2025-01-12T18:33:02 IST" duration-ms="5906" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ravinduheshan99.tests.StandAloneTestModified@7d0b7e3c]" started-at="2025-01-12T18:33:02 IST" name="tearDown" finished-at="2025-01-12T18:33:02 IST" duration-ms="469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ravinduheshan99.tests.StandAloneTestModified@7d0b7e3c]" started-at="2025-01-12T18:33:02 IST" name="launchApplication" finished-at="2025-01-12T18:33:09 IST" duration-ms="7098" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:ravinduheshan99.tests.StandAloneTestModified@7d0b7e3c]" started-at="2025-01-12T18:33:09 IST" name="OrderHistoryTest" finished-at="2025-01-12T18:33:11 IST" depends-on-methods="ravinduheshan99.tests.StandAloneTestModified.placeOrder" duration-ms="1803" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ravinduheshan99.tests.StandAloneTestModified@7d0b7e3c]" started-at="2025-01-12T18:33:11 IST" name="tearDown" finished-at="2025-01-12T18:33:12 IST" duration-ms="442" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- ravinduheshan99.tests.StandAloneTestModified -->
+    <test started-at="2025-01-12T18:50:03 IST" name="StandAloneTestModified" finished-at="2025-01-12T18:50:03 IST" duration-ms="36">
     </test> <!-- StandAloneTestModified -->
-    <test started-at="2025-01-12T18:33:12 IST" name="ErrorValidations" finished-at="2025-01-12T18:33:31 IST" duration-ms="19536">
+    <test started-at="2025-01-12T18:50:03 IST" name="ErrorValidations" finished-at="2025-01-12T18:50:27 IST" duration-ms="24319">
       <class name="ravinduheshan99.tests.ErrorValidations">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@5c80cf32]" started-at="2025-01-12T18:33:12 IST" name="launchApplication" finished-at="2025-01-12T18:33:19 IST" duration-ms="6716" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@4d0d9fe7]" started-at="2025-01-12T18:50:03 IST" name="launchApplication" finished-at="2025-01-12T18:50:24 IST" duration-ms="20834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@5c80cf32]" started-at="2025-01-12T18:33:19 IST" name="LoginErrorValidation" finished-at="2025-01-12T18:33:20 IST" duration-ms="1426" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@4d0d9fe7]" started-at="2025-01-12T18:50:24 IST" name="LoginErrorValidation" finished-at="2025-01-12T18:50:27 IST" duration-ms="2848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@5c80cf32]" started-at="2025-01-12T18:33:20 IST" name="tearDown" finished-at="2025-01-12T18:33:20 IST" duration-ms="334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@5c80cf32]" started-at="2025-01-12T18:33:20 IST" name="launchApplication" finished-at="2025-01-12T18:33:28 IST" duration-ms="7446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@5c80cf32]" started-at="2025-01-12T18:33:28 IST" name="ProductErrorValidation" finished-at="2025-01-12T18:33:31 IST" duration-ms="3200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@5c80cf32]" started-at="2025-01-12T18:33:31 IST" name="tearDown" finished-at="2025-01-12T18:33:31 IST" duration-ms="398" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ravinduheshan99.tests.ErrorValidations@4d0d9fe7]" started-at="2025-01-12T18:50:27 IST" name="tearDown" finished-at="2025-01-12T18:50:27 IST" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

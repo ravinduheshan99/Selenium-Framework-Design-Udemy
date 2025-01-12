@@ -8,7 +8,7 @@ import ravinduheshan99.pageobjects.CartPage;
 import ravinduheshan99.pageobjects.ProductCatalogue;
 public class ErrorValidations extends BaseTest{
 
-	@Test
+	@Test(groups= {"ErrorHandling"})
 	public void LoginErrorValidation() throws InterruptedException, IOException{
 		landingPage.loginApplication("test@gmail.com", "Invalid");
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
