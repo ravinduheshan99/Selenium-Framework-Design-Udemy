@@ -23,4 +23,5 @@ public class ErrorValidations extends BaseTest{
 		CartPage cartPage = productCatalogue.goToCartPage();
 		Assert.assertFalse(cartPage.VerifyProductDisplay("Invalid Product Name"));
 	}
+	
 }
