@@ -5,11 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LandingPage {
+import ravinduheshan99.AbstractComponents.AbstractComponents;
+
+public class LandingPage extends AbstractComponents{
 	
 	WebDriver driver;
 	
 	public LandingPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -29,14 +32,15 @@ public class LandingPage {
 	@FindBy(id="login")
 	WebElement login;
 	
-	public void loginApplication(String email, String pwrd) {
-		userEmail.sendKeys(email);
-		password.sendKeys(pwrd);
-		login.click();	
-	}
-	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client");
+	}
+	
+	public ProductCatalogue loginApplication(String email, String pwrd) {
+		userEmail.sendKeys(email);
+		password.sendKeys(pwrd);
+		login.click();
+		return new ProductCatalogue(driver);
 	}
 
 }
