@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ravinduheshan99.tests.StandAloneTestModified">
+      <class name="ravinduheshan99.tests.ErrorValidations">
         <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
           <include name="placeOrder"/>
         </methods>
-      </class> <!-- ravinduheshan99.tests.StandAloneTestModified -->
+      </class> <!-- ravinduheshan99.tests.ErrorValidations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -32,6 +32,9 @@ public class LandingPage extends AbstractComponents{
 	@FindBy(id="login")
 	WebElement login;
 	
+	@FindBy(xpath="//div[@aria-label='Incorrect email or password.']")
+	WebElement errorMessage;
+	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client");
 	}
@@ -41,6 +44,11 @@ public class LandingPage extends AbstractComponents{
 		password.sendKeys(pwrd);
 		login.click();
 		return new ProductCatalogue(driver);
+	}
+	
+	public String getErrorMessage() {
+		waitForWebElementToAppear(errorMessage);
+		return errorMessage.getText();
 	}
 
 }
