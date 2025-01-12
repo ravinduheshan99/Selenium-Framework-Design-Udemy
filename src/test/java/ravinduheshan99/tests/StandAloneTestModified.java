@@ -2,6 +2,7 @@ package ravinduheshan99.tests;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -37,17 +38,18 @@ public class StandAloneTestModified extends BaseTest{
 	}
 	
 	@DataProvider
-	public Object[][] getData() {
-		HashMap<String,String> map1 = new HashMap<String,String>();
-		map1.put("email", "test@gmail.com");
-		map1.put("password", "test@123");
-		map1.put("productName", "ADIDAS ORIGINAL");
+	public Object[][] getData() throws IOException {
+//		HashMap<String,String> map1 = new HashMap<String,String>();
+//		map1.put("email", "test@gmail.com");
+//		map1.put("password", "test@123");
+//		map1.put("productName", "ADIDAS ORIGINAL");
+//		
+//		HashMap<String,String> map2 = new HashMap<String,String>();
+//		map2.put("email", "raviya@gmail.com");
+//		map2.put("password", "Raviya@123");
+//		map2.put("productName", "IPHONE 13 PRO");
 		
-		HashMap<String,String> map2 = new HashMap<String,String>();
-		map2.put("email", "raviya@gmail.com");
-		map2.put("password", "Raviya@123");
-		map2.put("productName", "IPHONE 13 PRO");
-		
-		return new Object[][] {{map1},{map2}};
+		List<HashMap<String,String>> data = getJsonDataToMap(System.getProperty("user.dir")+"//src//test//java//ravinduheshan99//data//PurchaseOrder.json");
+		return new Object[][] {{data.get(0)},{data.get(1)}};
 	}
 }
