@@ -1,35 +1,27 @@
-package ravinduheshan99;
+package ravinduheshan99.tests;
 
-import java.time.Duration;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import java.io.IOException;
 import org.testng.Assert;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.annotations.Test;
+import ravinduheshan99.TestComponents.BaseTest;
 import ravinduheshan99.pageobjects.CartPage;
 import ravinduheshan99.pageobjects.CheckoutPage;
 import ravinduheshan99.pageobjects.ConfirmationPage;
 import ravinduheshan99.pageobjects.LandingPage;
 import ravinduheshan99.pageobjects.ProductCatalogue;
-import org.openqa.selenium.JavascriptExecutor;
+public class StandAloneTestModified extends BaseTest{
 
-public class StandAloneTestModified {
-
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void placeOrder() throws InterruptedException, IOException{
 
 		String productName = "ADIDAS ORIGINAL";
 
 		// Set up WebDriver for Chrome
 		// Implicit wait for element availability
 		// Maximize browser window for better visibility
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
-
 		// Open the application URL
 		// Enter login credentials and log in
-		LandingPage landingPage = new LandingPage(driver);
-		landingPage.goTo();
+		LandingPage landingPage= launchApplication();
 		ProductCatalogue productCatalogue = landingPage.loginApplication("test@gmail.com", "test@123");
 
 		// Explicit wait to ensure product cards are visible
@@ -52,9 +44,6 @@ public class StandAloneTestModified {
 		
 		// Scroll down to make the "Place Order" button visible
 		// Scrolls down 500 pixels; adjust as needed
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,500)"); 
-
 		// Wait for the submit button to become visible and click it
 		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
 

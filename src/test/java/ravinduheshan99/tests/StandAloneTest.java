@@ -1,4 +1,4 @@
-package ravinduheshan99;
+package ravinduheshan99.tests;
 
 import java.time.Duration;
 import java.util.List;
