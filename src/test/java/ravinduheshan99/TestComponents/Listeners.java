@@ -1,5 +1,7 @@
 package ravinduheshan99.TestComponents;
 
+import java.io.IOException;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -9,46 +11,59 @@ import com.aventstack.extentreports.Status;
 
 import ravinduheshan99.resources.ExtentReporterNG;
 
-public class Listeners implements ITestListener{
-	
+public class Listeners extends BaseTest implements ITestListener {
+
 	ExtentTest test;
 	ExtentReports extent = ExtentReporterNG.getReportObject();
-	
+
 	@Override
-    public void onTestStart(ITestResult result) {
+	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getMethod().getMethodName());
-    }
+	}
 
-    @Override
-    public void onTestSuccess(ITestResult result) {
-        test.log(Status.PASS, "Test Passed");
-    }
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		test.log(Status.PASS, "Test Passed");
+	}
 
-    @Override
-    public void onTestFailure(ITestResult result) {
-    	test.fail(result.getThrowable());
-    }
+	@Override
+	public void onTestFailure(ITestResult result) {
+		test.fail(result.getThrowable());
 
-    @Override
-    public void onTestSkipped(ITestResult result) {
-        // Invoked each time a test method is skipped.
-    }
+		try {
+			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
-    @Override
-    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        // Invoked each time a test method fails but is within the success percentage.
-    }
+		String filePath = null;
+		try {
+			filePath = getScreenshot(result.getMethod().getMethodName(), driver);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+	}
 
-    @Override
-    public void onStart(ITestContext context) {
-        // Invoked before any test method belonging to the classes inside the <test> tag is run.
-    }
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// Invoked each time a test method is skipped.
+	}
 
-    @Override
-    public void onFinish(ITestContext context) {
-        // Invoked after all the test methods belonging to the classes inside the <test> tag have run.
-    }
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// Invoked each time a test method fails but is within the success percentage.
+	}
 
-	
+	@Override
+	public void onStart(ITestContext context) {
+		// Invoked before any test method belonging to the classes inside the <test> tag
+		// is run.
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		extent.flush();
+	}
 
 }

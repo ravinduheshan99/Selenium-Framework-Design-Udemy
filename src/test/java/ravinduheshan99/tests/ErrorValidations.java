@@ -8,10 +8,11 @@ import ravinduheshan99.pageobjects.CartPage;
 import ravinduheshan99.pageobjects.ProductCatalogue;
 public class ErrorValidations extends BaseTest{
 	
+	//This test case is define to demonstrate failure scenario intentionally changing this line-->Incorrect email or password.
 	@Test(groups= {"ErrorHandling"})
 	public void LoginErrorValidation() throws InterruptedException, IOException{
 		landingPage.loginApplication("test@gmail.com", "Invalid");
-		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email password.", landingPage.getErrorMessage());
 	}
 	
 	@Test
