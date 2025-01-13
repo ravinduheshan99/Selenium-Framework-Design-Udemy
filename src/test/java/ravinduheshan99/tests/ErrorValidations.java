@@ -9,7 +9,7 @@ import ravinduheshan99.pageobjects.ProductCatalogue;
 public class ErrorValidations extends BaseTest{
 	
 	//This test case is define to demonstrate failure scenario intentionally changing this line-->Incorrect email or password.
-	@Test(groups= {"ErrorHandling"})
+	@Test(groups= {"ErrorHandling"},retryAnalyzer=ravinduheshan99.TestComponents.Retry.class)
 	public void LoginErrorValidation() throws InterruptedException, IOException{
 		landingPage.loginApplication("test@gmail.com", "Invalid");
 		Assert.assertEquals("Incorrect email password.", landingPage.getErrorMessage());

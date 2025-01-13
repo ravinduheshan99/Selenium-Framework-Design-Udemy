@@ -9,45 +9,24 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">ErrorValidations</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">88,988</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">StandAloneTestModified</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">109,788</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">198,776</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">StandAloneTestModified</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">60,015</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ErrorValidations</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">38,900</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">1</th><th class="num">98,915</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ErrorValidations &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ravinduheshan99.tests.ErrorValidations</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1736752519213</td><td rowspan="1">11952</td></tr><tr><th colspan="4">ErrorValidations &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ravinduheshan99.tests.ErrorValidations</td><td><a href="#m1">ProductErrorValidation</a></td><td rowspan="1">1736752559926</td><td rowspan="1">16423</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">StandAloneTestModified &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ravinduheshan99.tests.StandAloneTestModified</td><td><a href="#m2">OrderHistoryTest</a></td><td rowspan="1">1736752587080</td><td rowspan="1">11784</td></tr><tr class="passedeven"><td><a href="#m3">placeOrder</a></td><td rowspan="2">1736752515738</td><td rowspan="2">21592</td></tr><tr class="passedeven"><td><a href="#m4">placeOrder</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">StandAloneTestModified &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ravinduheshan99.tests.StandAloneTestModified</td><td><a href="#m0">OrderHistoryTest</a></td><td rowspan="1">1736754660823</td><td rowspan="1">4394</td></tr><tr class="passedeven"><td><a href="#m1">placeOrder</a></td><td rowspan="2">1736754638849</td><td rowspan="2">11225</td></tr><tr class="passedeven"><td><a href="#m2">placeOrder</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ErrorValidations &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ravinduheshan99.tests.ErrorValidations</td><td><a href="#m3">LoginErrorValidation</a></td><td rowspan="1">1736754688339</td><td rowspan="1">2393</td></tr><tr><th colspan="4">ErrorValidations &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">ravinduheshan99.tests.ErrorValidations</td><td><a href="#m4">LoginErrorValidation</a></td><td rowspan="1">1736754677068</td><td rowspan="1">2513</td></tr><tr><th colspan="4">ErrorValidations &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ravinduheshan99.tests.ErrorValidations</td><td><a href="#m5">ProductErrorValidation</a></td><td rowspan="1">1736754701066</td><td rowspan="1">5426</td></tr></tbody>
 </table>
-<h2>ErrorValidations</h2><h3 id="m0">ravinduheshan99.tests.ErrorValidations#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=131.0.6778.265)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0f4152a7eac9612bf4676256f463c40e, getElementText {id=f.290E1C3E1DD73362CA5312562DF4540D.d.A0F0488B14C9D4A26CE00B6F3C497AC9.e.22}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\RAVIND~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9486/devtool..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0f4152a7eac9612bf4676256f463c40e)] -&gt; xpath: //div[@aria-label=&apos;Incorrect email or password.&apos;]]
-Session ID: 0f4152a7eac9612bf4676256f463c40e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
-	at ravinduheshan99.pageobjects.LandingPage.getErrorMessage(LandingPage.java:51)
+<h2>StandAloneTestModified</h2><h3 id="m0">ravinduheshan99.tests.StandAloneTestModified#OrderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ravinduheshan99.tests.StandAloneTestModified#placeOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Raviya@123, email=raviya@gmail.com, productName=IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ravinduheshan99.tests.StandAloneTestModified#placeOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=test@123, email=test@gmail.com, productName=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ErrorValidations</h2><h3 id="m3">ravinduheshan99.tests.ErrorValidations#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
 	at ravinduheshan99.tests.ErrorValidations.LoginErrorValidation(ErrorValidations.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ravinduheshan99.tests.ErrorValidations#ProductErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>StandAloneTestModified</h2><h3 id="m2">ravinduheshan99.tests.StandAloneTestModified#OrderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">ravinduheshan99.tests.StandAloneTestModified#placeOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=test@123, email=test@gmail.com, productName=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">ravinduheshan99.tests.StandAloneTestModified#placeOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Raviya@123, email=raviya@gmail.com, productName=IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ravinduheshan99.tests.ErrorValidations#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email password.]
+	at ravinduheshan99.tests.ErrorValidations.LoginErrorValidation(ErrorValidations.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ravinduheshan99.tests.ErrorValidations#ProductErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
