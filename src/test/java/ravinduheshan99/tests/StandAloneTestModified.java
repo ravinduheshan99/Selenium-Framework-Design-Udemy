@@ -16,6 +16,7 @@ public class StandAloneTestModified extends BaseTest{
 	
 	String productName = "ADIDAS ORIGINAL";
 
+	//Pass-2 test cases
 	@Test(dataProvider="getData", groups= {"Purchase"})
 	public void placeOrder(HashMap<String,String> map) throws InterruptedException, IOException{
 		ProductCatalogue productCatalogue = landingPage.loginApplication(map.get("email"), map.get("password"));
@@ -29,6 +30,7 @@ public class StandAloneTestModified extends BaseTest{
 		Assert.assertTrue(confirmationPage.getConfirmationMessage().equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 	}
 	
+	//Pass
 	@Test(dependsOnMethods = {"placeOrder"})
 	public void OrderHistoryTest() throws InterruptedException, IOException{
 		ProductCatalogue productCatalogue = landingPage.loginApplication("test@gmail.com", "test@123");

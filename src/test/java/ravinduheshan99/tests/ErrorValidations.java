@@ -8,6 +8,7 @@ import ravinduheshan99.pageobjects.CartPage;
 import ravinduheshan99.pageobjects.ProductCatalogue;
 public class ErrorValidations extends BaseTest{
 	
+	//Fail
 	//This test case is define to demonstrate failure scenario intentionally changing this line-->Incorrect email or password.
 	@Test(groups= {"ErrorHandling"},retryAnalyzer=ravinduheshan99.TestComponents.Retry.class)
 	public void LoginErrorValidation() throws InterruptedException, IOException{
@@ -15,6 +16,7 @@ public class ErrorValidations extends BaseTest{
 		Assert.assertEquals("Incorrect email password.", landingPage.getErrorMessage());
 	}
 	
+	//Pass
 	@Test
 	public void ProductErrorValidation() throws InterruptedException, IOException{
 		String productName = "ADIDAS ORIGINAL";
