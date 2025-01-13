@@ -14,6 +14,10 @@ import ravinduheshan99.pageobjects.OrderPage;
 import ravinduheshan99.pageobjects.ProductCatalogue;
 public class StandAloneTestModified extends BaseTest{
 	
+//	mvn test: Runs all tests with default settings.
+//	mvn test -PRegression: Runs tests with the Regression profile.
+//	mvn test -PRegression -Dbrowser=Firefox: Runs tests with the Regression profile in Firefox.
+	
 	String productName = "ADIDAS ORIGINAL";
 
 	//Pass-2 test cases
