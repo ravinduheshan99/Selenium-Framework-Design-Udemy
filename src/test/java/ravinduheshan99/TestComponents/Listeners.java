@@ -15,10 +15,12 @@ public class Listeners extends BaseTest implements ITestListener {
 
 	ExtentTest test;
 	ExtentReports extent = ExtentReporterNG.getReportObject();
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();//Thread Safe
 
 	@Override
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);//Unique thread id(ErrorValidationTest)->test
 	}
 
 	@Override
@@ -28,7 +30,7 @@ public class Listeners extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
 
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
