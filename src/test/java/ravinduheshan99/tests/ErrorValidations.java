@@ -13,7 +13,7 @@ public class ErrorValidations extends BaseTest{
 	@Test(groups= {"ErrorHandling"},retryAnalyzer=ravinduheshan99.TestComponents.Retry.class)
 	public void LoginErrorValidation() throws InterruptedException, IOException{
 		landingPage.loginApplication("test@gmail.com", "Invalid");
-		Assert.assertEquals("Incorrect email password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 	}
 	
 	//Pass

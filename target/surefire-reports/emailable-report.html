@@ -9,63 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">StandAloneTestModified</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">59,945</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ErrorValidations</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,121</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num attn">1</th><th class="num">0</th><th class="num attn">2</th><th class="num">76,066</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">ErrorValidations</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">108,406</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">StandAloneTestModified</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">130,482</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">238,888</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">StandAloneTestModified &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ravinduheshan99.tests.StandAloneTestModified</td><td><a href="#m0">placeOrder</a></td><td rowspan="1">1736769307316</td><td rowspan="1">2434</td></tr><tr><th colspan="4">StandAloneTestModified &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">ravinduheshan99.tests.StandAloneTestModified</td><td><a href="#m1">OrderHistoryTest</a></td><td rowspan="1">1736769312795</td><td rowspan="1">0</td></tr><tr><th colspan="4">StandAloneTestModified &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ravinduheshan99.tests.StandAloneTestModified</td><td><a href="#m2">placeOrder</a></td><td rowspan="1">1736769282404</td><td rowspan="1">8313</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ErrorValidations &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ravinduheshan99.tests.ErrorValidations</td><td><a href="#m3">ProductErrorValidation</a></td><td rowspan="1">1736769323778</td><td rowspan="1">2892</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ErrorValidations &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">ravinduheshan99.tests.ErrorValidations</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1736777630114</td><td rowspan="1">3576</td></tr><tr class="passedeven"><td><a href="#m1">ProductErrorValidation</a></td><td rowspan="1">1736777668300</td><td rowspan="1">11249</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">StandAloneTestModified &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ravinduheshan99.tests.StandAloneTestModified</td><td><a href="#m2">OrderHistoryTest</a></td><td rowspan="1">1736777691698</td><td rowspan="1">12051</td></tr><tr class="passedeven"><td><a href="#m3">placeOrder</a></td><td rowspan="2">1736777634680</td><td rowspan="2">10751</td></tr><tr class="passedeven"><td><a href="#m4">placeOrder</a></td></tr></tbody>
 </table>
-<h2>StandAloneTestModified</h2><h3 id="m0">ravinduheshan99.tests.StandAloneTestModified#placeOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Raviya@123, email=raviya@gmail.com, productName=IPHONE 13 PRO}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1110,27) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot;&gt; obscures it
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [c7c44d2c-c5c9-49d2-99fb-da848b059704, clickElement {id=24f2ad87-b78d-4024-b6e0-805f0874a5f1}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0, moz:accessibilityChecks: false, moz:buildID: 20241121140525, moz:debuggerAddress: 127.0.0.1:5332, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17404, moz:profile: C:\Users\RAVIND~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:5332/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (c7c44d2c-c5c9-49d2-99fb-da848b059704)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
-Session ID: c7c44d2c-c5c9-49d2-99fb-da848b059704
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at ravinduheshan99.AbstractComponents.AbstractComponents.goToCartPage(AbstractComponents.java:48)
-	at ravinduheshan99.tests.StandAloneTestModified.placeOrder(StandAloneTestModified.java:25)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ravinduheshan99.tests.StandAloneTestModified#OrderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method ravinduheshan99.tests.StandAloneTestModified.OrderHistoryTest() on instance ravinduheshan99.tests.StandAloneTestModified@247310d0 depends on not successfully finished methods 
-[ravinduheshan99.tests.StandAloneTestModified.placeOrder() on instance ravinduheshan99.tests.StandAloneTestModified@247310d0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ravinduheshan99.tests.StandAloneTestModified#placeOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=test@123, email=test@gmail.com, productName=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ErrorValidations</h2><h3 id="m3">ravinduheshan99.tests.ErrorValidations#ProductErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1110,27) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot;&gt; obscures it
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [2c4e927c-08d8-4b13-bd7b-4ae5009ccca2, clickElement {id=c53617ed-b411-43a1-a128-b078351aca81}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0, moz:accessibilityChecks: false, moz:buildID: 20241121140525, moz:debuggerAddress: 127.0.0.1:25051, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6892, moz:profile: C:\Users\RAVIND~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25051/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (2c4e927c-08d8-4b13-bd7b-4ae5009ccca2)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
-Session ID: 2c4e927c-08d8-4b13-bd7b-4ae5009ccca2
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at ravinduheshan99.AbstractComponents.AbstractComponents.goToCartPage(AbstractComponents.java:48)
-	at ravinduheshan99.tests.ErrorValidations.ProductErrorValidation(ErrorValidations.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 40 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ErrorValidations</h2><h3 id="m0">ravinduheshan99.tests.ErrorValidations#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ravinduheshan99.tests.ErrorValidations#ProductErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>StandAloneTestModified</h2><h3 id="m2">ravinduheshan99.tests.StandAloneTestModified#OrderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ravinduheshan99.tests.StandAloneTestModified#placeOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=test@123, email=test@gmail.com, productName=ADIDAS ORIGINAL}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ravinduheshan99.tests.StandAloneTestModified#placeOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Raviya@123, email=raviya@gmail.com, productName=IPHONE 13 PRO}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
