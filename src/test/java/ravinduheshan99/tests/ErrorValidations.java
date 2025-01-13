@@ -7,7 +7,7 @@ import ravinduheshan99.TestComponents.BaseTest;
 import ravinduheshan99.pageobjects.CartPage;
 import ravinduheshan99.pageobjects.ProductCatalogue;
 public class ErrorValidations extends BaseTest{
-
+	
 	@Test(groups= {"ErrorHandling"})
 	public void LoginErrorValidation() throws InterruptedException, IOException{
 		landingPage.loginApplication("test@gmail.com", "Invalid");
