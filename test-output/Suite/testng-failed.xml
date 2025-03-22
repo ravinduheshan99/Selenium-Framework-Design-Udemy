@@ -8,11 +8,23 @@
     <classes>
       <class name="ravinduheshan99.tests.ErrorValidations">
         <methods>
+          <include name="ProductErrorValidation"/>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="LoginErrorValidation"/>
         </methods>
       </class> <!-- ravinduheshan99.tests.ErrorValidations -->
     </classes>
   </test> <!-- ErrorValidations(failed) -->
+  <test thread-count="5" parallel="tests" name="StandAloneTestModified(failed)">
+    <classes>
+      <class name="ravinduheshan99.tests.StandAloneTestModified">
+        <methods>
+          <include name="placeOrder" invocation-numbers="0 1"/>
+          <include name="launchApplication"/>
+          <include name="OrderHistoryTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ravinduheshan99.tests.StandAloneTestModified -->
+    </classes>
+  </test> <!-- StandAloneTestModified(failed) -->
 </suite> <!-- Failed suite [Suite] -->
