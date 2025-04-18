@@ -1,23 +1,7 @@
-```markdown
-# Selenium Automation Framework (Udemy Course)
+# Selenium Automation Framework - Selenium WebDriver with Java Basics to Advanced
 
 This repository contains a complete Selenium WebDriver automation framework developed as part of the Udemy course:
-**"Selenium WebDriver with Java - Basics to Advanced + Frameworks"**
-
----
-
-## 🎓 Course Topics Covered
-
-This course covers a broad range of topics including:
-
-- ✅ Java Basics Core
-- ✅ Selenium WebDriver
-- ✅ Advanced Selenium
-- ✅ Framework Design: TestNG, ANT, PageObject, Maven, Jenkins, Excel Datadriven, Cucumber, log4j
-- ✅ Selenium Grid
-- ✅ Database Testing
-- ✅ Performance Testing on Selenium Scripts
-- ✅ Mobile Testing Basics
+**"Selenium WebDriver with Java - Basics to Advanced + Frameworks By Rahul Shetty"**
 
 ---
 
@@ -25,7 +9,7 @@ This course covers a broad range of topics including:
 
 Here’s a visual overview of the framework design:
 
-![Framework Diagram](https://github.com/ravinduheshan99/Selenium-Framework-Design-Udemy/tree/main/Framework%20Architectural%20Diagram/Selenium Automation Framework Architecture Diagram.png)
+![Framework Architecture](https://github.com/ravinduheshan99/Selenium-Framework-Design-Udemy/blob/main/Framework%20Architectural%20Diagram/Selenium%20Automation%20Framework%20Architecture%20Diagram.png)
 
 ### 🔧 Components Breakdown
 
@@ -118,4 +102,3 @@ mvn test -P<profile-name>
 ---
 
 ✅ *Feel free to fork this repo or raise an issue for improvements or bugs.*
-```
