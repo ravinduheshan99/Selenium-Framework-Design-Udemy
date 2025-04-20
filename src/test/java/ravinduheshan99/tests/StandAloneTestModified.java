@@ -18,7 +18,7 @@ public class StandAloneTestModified extends BaseTest{
 //	mvn test -PRegression: Runs tests with the Regression profile.
 //	mvn test -PRegression -Dbrowser=Firefox: Runs tests with the Regression profile in Firefox.
 	
-	String productName = "ZARA COAT 3";
+	String productName = "ADIDAS ORIGINAL";
 
 	//Pass-2 test cases
 	@Test(dataProvider="getData", groups= {"Purchase"})
